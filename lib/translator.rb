@@ -1,10 +1,11 @@
 require 'yaml'
-emoticons_dictionary = YAML.load_file('lib/emoticons.yml')
+require 'pry'
 
 def load_library(emoticons_dictionary)
   loaded_emoticons_dictionary = YAML.load_file(emoticons_dictionary)
   sorted_dictionary = {}
   loaded_emoticons_dictionary.each do |name, symbols|
+    binding.pry
     symbols.each do |symbol|
       if sorted_dictionary[name]
         sorted_dictionary[name][:japanese] << symbol.to_s
