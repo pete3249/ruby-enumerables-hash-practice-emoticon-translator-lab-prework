@@ -12,8 +12,8 @@ def load_library(emoticons_dictionary)
 end
 
 def get_english_meaning(emoticons_dictionary, emoticon)
+  loaded_emoticons = load_library(emoticons_dictionary) 
   binding.pry
-  load_library(emoticons_dictionary)
 end
 
 
