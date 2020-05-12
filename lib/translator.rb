@@ -19,7 +19,7 @@ def get_english_meaning(emoticons_dictionary, emoticon)
       return english_meaning
     else
       sorry_message = "Sorry, that emoticon was not found"
-      p sorry_message
+      return sorry_message
     end
   end
 end
