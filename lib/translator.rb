@@ -1,6 +1,5 @@
 require 'yaml'
 emoticons_dictionary = YAML.load_file('lib/emoticons.yml')
-puts emoticons_dictionary
 
 def load_library(emoticons_dictionary)
   sorted_dictionary = {}
@@ -14,7 +13,7 @@ def load_library(emoticons_dictionary)
       end
     end
   end
-  puts sorted_dictionary
+  sorted_dictionary
 end
 
 def get_japanese_emoticon
