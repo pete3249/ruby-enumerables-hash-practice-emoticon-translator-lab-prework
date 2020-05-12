@@ -2,6 +2,7 @@ require 'yaml'
 emoticons_dictionary = YAML.load_file('lib/emoticons.yml')
 
 def load_library(emoticons_dictionary)
+  loaded_emoticons_dictionary = YAML.load_file(emoticons_dictionary)
 sorted_dictionary = {}
   emoticons_dictionary.each do |name, symbols|
     symbols.each do |symbol|
