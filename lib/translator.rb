@@ -15,7 +15,7 @@ def get_english_meaning(emoticons_dictionary, emoticon)
   loaded_emoticons = load_library(emoticons_dictionary) 
   loaded_emoticons[:get_meaning].each do |key, values|
     if key == emoticon
-      english_meaning = loaded_emoticons[key]
+      english_meaning = values
       return english_meaning
     else
       sorry_message = "Sorry, that emoticon was not found"
