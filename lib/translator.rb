@@ -17,10 +17,10 @@ def get_english_meaning(emoticons_dictionary, emoticon)
   binding.pry
     if loaded_emoticons[key] == emoticon
       english_meaning = loaded_emoticons[key][emoticon]
-      puts english_meaning
+      return english_meaning
     else
       sorry_message = "Sorry, that emoticon was not found"
-      puts sorry_message
+      return sorry_message
     end
   end
 end
