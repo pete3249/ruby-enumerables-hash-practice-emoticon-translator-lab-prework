@@ -14,7 +14,6 @@ end
 def get_english_meaning(emoticons_dictionary, emoticon)
   loaded_emoticons = load_library(emoticons_dictionary) 
   loaded_emoticons.each do |key, values|
-    binding.pry
     if loaded_emoticons[:get_meaning] = emoticon
       english_meaning = loaded_emoticons[:get_meaning][emoticon]
       puts english_meaning
