@@ -18,6 +18,8 @@ def get_english_meaning(emoticons_dictionary, emoticon)
     if loaded_emoticons[:get_meaning] = emoticon
       english_meaning = loaded_emoticons[:get_meaning][emoticon]
       puts english_meaning
+    end
+  end
 end
 
 
