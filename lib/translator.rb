@@ -3,7 +3,7 @@ require 'pry'
 
 def load_library(emoticons_dictionary)
   loaded_emoticons_dictionary = YAML.load_file(emoticons_dictionary)
-  sorted_dictionary = {}
+  sorted_dictionary = {:get_meaning => {}, :get_emoticon => {}}
   loaded_emoticons_dictionary.each do |name, symbols|
     binding.pry
     symbols.each do |symbol|
