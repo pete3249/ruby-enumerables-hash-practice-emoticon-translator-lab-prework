@@ -23,5 +23,8 @@ end
 def get_japanese_emoticon(emoticons_dictionary, emoticon)
   imported_emoticons = load_library(emoticons_dictionary) 
   value = imported_emoticons[:get_emoticon][emoticon]
+    if value == nil
+      return "Sorry, that emoticon was not found"
+    end
   return value
 end
