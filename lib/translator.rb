@@ -18,7 +18,7 @@ def get_english_meaning(emoticons_dictionary, emoticon)
       english_meaning = loaded_emoticons[key][emoticon]
     else
       sorry_message = "Sorry, that emoticon was not found"
-      return sorry_message
+      p sorry_message
     end
     english_meaning
   end
