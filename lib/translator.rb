@@ -7,14 +7,7 @@ def load_library(emoticons_dictionary)
   loaded_emoticons_dictionary.each do |name, symbols|
     binding.pry
     sorted_dictionary[:get_meaning][symbols[1]] = name
-    symbols.each do |symbol|
-      if sorted_dictionary[name]
-        sorted_dictionary[name][:japanese] << symbol.to_s
-      else
-        sorted_dictionary[name] = {:english => "", :japanese => ""}
-        sorted_dictionary[name][:english] << symbol.to_s
-      end
-    end
+    sorted_dictionary[:get_emoticon][symbols[0]] = loaded_emoticons_dictionary[name][1]
   end
   sorted_dictionary
 end
