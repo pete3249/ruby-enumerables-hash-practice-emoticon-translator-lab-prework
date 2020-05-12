@@ -3,7 +3,7 @@ emoticons_dictionary = YAML.load_file('lib/emoticons.yml')
 puts emoticons_dictionary
 
 def load_library(emoticons_dictionary)
-  
+  emoticons_dictionary.each do |name, symbols|
 end
 
 def get_japanese_emoticon
