@@ -17,8 +17,6 @@ def load_library(emoticons_dictionary)
   puts sorted_dictionary
 end
 
-end
-
 def get_japanese_emoticon
   # code goes here
 end
