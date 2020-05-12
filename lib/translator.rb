@@ -5,7 +5,6 @@ def load_library(emoticons_dictionary)
   loaded_emoticons_dictionary = YAML.load_file(emoticons_dictionary)
   sorted_dictionary = {:get_meaning => {}, :get_emoticon => {}}
   loaded_emoticons_dictionary.each do |name, symbols|
-    binding.pry
     sorted_dictionary[:get_meaning][symbols[1]] = name
     sorted_dictionary[:get_emoticon][symbols[0]] = symbols[1]
   end
