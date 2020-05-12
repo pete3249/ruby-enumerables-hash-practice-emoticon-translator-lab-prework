@@ -13,7 +13,7 @@ sorted_dictionary = {}
       end
     end
   end
-  returns sorted_dictionary
+  sorted_dictionary
 end
 
 def get_japanese_emoticon
