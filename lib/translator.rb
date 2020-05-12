@@ -20,6 +20,8 @@ def get_english_meaning(emoticons_dictionary, emoticon)
   return temporary_value
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(emoticons_dictionary, emoticon)
+  imported_emoticons = load_library(emoticons_dictionary) 
+  value = imported_emoticons[:get_emoticon][emoticon]
+  return value
 end
