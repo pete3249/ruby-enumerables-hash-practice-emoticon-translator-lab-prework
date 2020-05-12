@@ -13,15 +13,11 @@ end
 
 def get_english_meaning(emoticons_dictionary, emoticon)
   loaded_emoticons = load_library(emoticons_dictionary) 
-  loaded_emoticons[:get_meaning].each do |key, values|
-    if key == emoticon
-      english_meaning = values
-      return english_meaning
-    else
-      sorry_message = "Sorry, that emoticon was not found"
-      return sorry_message
+  temporary_value = loaded_emoticons[:get_meaning][emoticon]
+    if temporary_value == nil
+      return "Sorry, that emoticon was not found"
     end
-  end
+  return temporary_value
 end
 
 def get_japanese_emoticon
