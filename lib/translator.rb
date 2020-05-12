@@ -17,14 +17,13 @@ def get_english_meaning(emoticons_dictionary, emoticon)
     binding.pry
     if loaded_emoticons[:get_meaning] = emoticon
       english_meaning = loaded_emoticons[:get_meaning][emoticon]
-      p english_meaning
+      puts english_meaning
     else
-      
-      
+      sorry_message = "Sorry, that emoticon was not found"
+      puts sorry_message
     end
   end
 end
-
 
 def get_japanese_emoticon
   # code goes here
