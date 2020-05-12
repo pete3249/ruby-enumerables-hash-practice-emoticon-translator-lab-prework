@@ -17,11 +17,11 @@ def load_library(emoticons_dictionary)
   sorted_dictionary
 end
 
-def get_japanese_emoticon
-  
-  # code goes here
+def get_english_meaning
+  load_library(emoticons_dictionary)
 end
 
-def get_english_meaning
+
+def get_japanese_emoticon
   # code goes here
 end
