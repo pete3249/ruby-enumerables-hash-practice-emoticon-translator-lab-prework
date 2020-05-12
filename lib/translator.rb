@@ -15,7 +15,6 @@ sorted_dictionary = {}
   end
   returns sorted_dictionary
 end
-end
 
 def get_japanese_emoticon
   # code goes here
