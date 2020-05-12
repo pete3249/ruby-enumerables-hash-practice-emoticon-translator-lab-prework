@@ -11,7 +11,8 @@ def load_library(emoticons_dictionary)
   sorted_dictionary
 end
 
-def get_english_meaning
+def get_english_meaning(emoticons_dictionary, emoticon)
+  binding.pry
   load_library(emoticons_dictionary)
 end
 
